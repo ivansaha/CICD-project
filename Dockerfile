@@ -1,2 +1,2 @@
-FROM httpd:latest
+FROM $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
 COPY .  /usr/local/apache2/htdocs/
